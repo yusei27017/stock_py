@@ -1,0 +1,13 @@
+version: '3'
+services:
+  stock-dev:
+    image: stock-dev
+    container_name: stock-dev
+    volumes:
+      - ./python_dev:/python_dev
+    networks:
+      - dev-network
+    # command: ['python3', 'e04.py']
+
+networks:
+  dev-network:
