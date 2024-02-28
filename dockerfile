@@ -2,7 +2,7 @@ FROM python:3.10-slim-bullseye
 
 RUN apt-get update \
   && pip install --no-cache-dir --upgrade pip\
-  && pip install pandas requests
+  && pip install pandas requests yfinance
 
 WORKDIR /python_dev
 
